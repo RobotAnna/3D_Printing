@@ -1,0 +1,96 @@
+filament
+-filament_id
+-polymer_type
+-filament_brand
+-filament_model
+-filament_colorway
+-color_category
+-purchase_date
+-purchase_weight
+-purchase_price
+
+collection
+-collection_id
+-collection_name
+-collection_url
+-collection_description_short
+
+source
+-source_id
+-source_url
+-source_title
+-source_description_short
+-collection_id
+
+design
+-design_id
+-design_description_short
+-ind_remix
+-ind_mydesign
+-design_tool
+-design_url
+-design_files
+-source_id
+logic
+-- if (mydesign) then the project contains at least one element that i designed from scratch
+-- if (mydesign) and (myremix) then i remixed my design
+-- if not(mydesign) and not (myremix) then i printed someone else's design without modification -- in this case, why is there even an entry in this table?
+-- if not(mydesign) and (myremix) then i remixed and printed someone else's design
+(design_files) needs to be 1:n attachments. could be stl files &/or oscad files. how to add attachments to a pgres database? or do i first make the entry into design table, and then upload attachments to the repo
+
+
+
+
+
+project
+-project_id
+-project_title
+-description_short
+-description_long
+-tags
+-ind_mydesign
+-ind_myremix
+-ind_printed
+-ind_installed
+-ind_uploaded
+-ind_finished
+logic
+-- if (mydesign) then the project contains at least one element that i designed from scratch
+-- if (myremix)  then the project contains at least one element that i remixed
+also link to 1:n collections, sources, designs, prints & uploads
+-success (t/f)
+logic
+-- if (success)    then i'm satisfied with the print
+-- if not(success) then i'm not satisfied with the print, and i'll either rework it or scrap it
+
+upload
+-upload_id
+-upload_date
+-url_printables
+-category_printables
+-url_thingiverse
+-url_makerworld
+-upload_photos
+(upload_photos) needs to be 1:n attachments. photos with privacy data already removed. how to add attachments to a pgres database? or do i first make the entry into upload table, and then upload attachments to the repo
+
+
+
+print
+-id
+-design_id
+-source_id
+-print_date
+-filament_id
+-printer_model
+-nozzle
+-layer_height
+-special_print_settings
+-print_files
+-ind_ironing
+logic
+-- if (design_id) then the print contains at least one element that i designed &/or remixed
+-- if (source_id) then the print contains at least one element from a source other than me
+(print_files) needs to be 1:n attachments. could be 3mf files &/or gcode, preferably both. how to add attachments to a pgres database? or do i first make the entry into print table, and then upload attachments to the repo
+
+
+
