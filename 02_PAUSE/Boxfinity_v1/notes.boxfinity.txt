@@ -1,0 +1,40 @@
+mk4s build plate: 250 x 210
+
+prusament petg box, prusa basic pla+
+inside:  77h x 210w x 206d
+outside: 80h x 229w x 211d
+
+prusa kit box
+inside:  95h x 212w x 204d
+outside: 98h x 228w x 211d
+
+polymaker box
+inside:  73h x 208w x 200d --> needs to be 210
+outside: 77h x 223w x 206d
+
+
+-------------------------
+
+stuff to organize:
+
+tall:
+glue
+hairspray
+glassex
+iso alch
+
+long flat:
+deburrer
+2x pliers
+4x allen keys
+1x screwdriver
+biro
+sharpie
+lighter
+
+consumable:
+cotton wipes
+yellow cloths
+tissues
+post-it notes
+
