@@ -1,0 +1,9 @@
+
+Filaments to test:
+
+yellow prusa pla
+black filam  pla
+white poly   pla
+black prusa  petg
+white buddy  petg
+yellow prusa petg
