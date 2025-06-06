@@ -1,0 +1,7 @@
+240 minimum for any PET and/or its derivatives blend product, and that's for hotend with good thermals (if poor PID tuning, cheap parts, steel nozzles, etc. that could need to be a lot higher). In my book there are not exceptions - only some that perform better hotter.
+
+Bed temp never below 85. Ideally, never below 90. There can be, with some blends, quite a bit of shrinkage stress created and even with good adhesion, pushing the envelope by increasing dT any more than necessary is a bad idea. Only reason to use or mention lower than 90, is that certain bed heaters are of limited power and certain part geometries where part cooling air hitting directly over the bed thermistor creates the risk of false tripping runaway protection, if enabled. Bed heat somehow flattening the bottom of part is not the cause of elephant foot, this is caused by correct real world first layer compaction on all but the flattest bed and is normal/unavoidable, use 0.5mm chamfer on part edges facing bed to suppress burr.
+
+My most common values in filament profiles are 243/90, 242/85 and 240/85. Generally, I start new filaments as 240/85; if they show trouble with shrinkage stresses (corner lifting) the bed temp gets bumped. Same for the hotend. If I'm seeing a lot of matteness on perimeters at 240, or a couple extra degrees make things sharper that's a sign to bump that up.
+
+
