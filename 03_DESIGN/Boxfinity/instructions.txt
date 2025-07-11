@@ -1,0 +1,12 @@
+https://gridfinity.perplexinglabs.com/pr/gridfinity-rebuilt/0/0
+
+
+Nozzle: 0.4mm or 0.6mm
+Layer height: 0.2mm, 0.25mm or 0.28mm
+Filament: PLA or PETG
+Infil: 10%
+Fill pattern: Gyroid
+Solid layers: 3, bottom and top
+
+
+1x1 = 17g
