@@ -1,0 +1,71 @@
+height: 19mm
+width: 100mm
+thickness: 1.6mm
+
+hole to hole: 88mm
+dia: 4mm --> why did I choose 3.5mm?
+
+Font: DIN letter type din1451
+capitaal 5mm gaten
+
+Font size on board:
+Letter line thickness ~0.5mm.
+Capital M: height 5mm, width 4mm.
+Small m: height 4mm, width 4.
+Approximately of course but you get the idea
+
+Names:
+Sophie & Sven
+N. Roodhorst
+David Seal
+Paul Gerritsen
+Tamanna B.
+
+Instructions:
+1. DOWNLOAD FONT
+Download and install font DIN1451.
+2. WORD
+In MS Word, type the names and change font to "DIN Mittelschrift Std", as large as possible. Not bold, just regular.
+3. PAINT, SAVE AS PNG
+Take a screenshot and paste into MS Paint. Save as PNG.
+4. CONVERT TO SVG
+Use a website such as Convertio.co to convert png to svg
+5. TINKERCAD
+Open Tinkercad, start a new design. Import the blank nameplate and place down a ruler.
+a). IMPORT + RESIZE
+Import your text. Resize down while holding shift, so the aspect ratio doesn't change. Reduce until the capital letter is 5mm high, lower case letter is 4mm high, and the width of the lettering is 0.6mm.
+b). PLACE
+Raise the text so it's 0.6mm off the bed, and center it over the blank plate.
+c). HOLE + MERGE
+Change text to a hole, then merge with the blank plate.
+d). EXPORT
+Export as a STL file.
+6. PRUSA SLICER
+a) IMPORT
+Import the STL into PrusaSlicer
+b) SETTINGS
+Use these settings.
+
+Print settings: 0.20mm STRUCTURAL
+Filament: Prusament PETG
+Printer: MK4S, HF0.4 nozzle
+Infill: 100%
+
+Layers and perimeters
+  Layer height: 0.2mm
+  First layer: 0.2mm
+  Solid layers: 3 top and bottom
+  Minimum shell thickness: 0.6mm top and bottom
+
+Infill
+  Fill density: 100%
+  Fill pattern: Rectilinear
+  Top fill pattern: Monotonic lines
+
+c) SLICE
+Slice, and add a color change at 0.8mm
+Export the BG code
+
+7. PRINT
+Be careful during the color change: a scrap of PETG may form a loop and deposit itself onto the nozzle just before printing the top layers. Have pliers in hand and be ready to catch the scrap!
+
