@@ -1,0 +1,9 @@
+Nozzle		Layer Height	Print Time
+0.4mm MK3S	0.30mm DRAFT	2h 36m
+
+0.4mm HF	0.28mm DRAFT	   57m
+0.6mm		0.32mm SPEED	1h 07m
+0.6mm HF	0.40mm SPEED	   45m*
+0.8mm		0.55mm DRAFT	1h 04m
+0.8mm HF	0.55mm SPEED	   43m
+
