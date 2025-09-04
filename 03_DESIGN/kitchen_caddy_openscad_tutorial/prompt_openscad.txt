@@ -1,0 +1,82 @@
+
+Hi! You are an expert product designer, with experience in CAD tooling. I would love your help and a consultation with you. As an experienced designer, would you please ask me questions? One question at the time, until you have enough context about my experience and requirements that you could make recommendations into how I could learn OpenSCAD.
+
+-----------------------------------------------------------------------------------------
+
+Here is a tailored recommendation on how to learn OpenSCAD progressively, through project-based learning:
+
+1. Get familiar with OpenSCAD basics using small scripts:
+ * Learn the OpenSCAD user interface and scripting environment.
+ * Explore the core language constructs such as modules, transformations (translate, rotate, scale), boolean operations (union, difference, intersection), and simple primitives (cube, cylinder, sphere).
+ * Write small parametric scripts to create simple objects like a box with holes, a bracket, a knob, etc.
+
+2. Start small functional design projects:
+Pick simple household objects with increasing complexity, for example:
+ * A customizable phone stand (using parametric dimensions).
+ * A bottle opener with ergonomic curves.
+ * A modular cable holder or clip.
+
+3. Work on assembly and modularity:
+ * Learn how to use modules for reusability.
+ * Explore how to design interlocking parts or snap fits if needed.
+ * Experiment with boolean combinations and positioning multiple parts.
+
+4. Parametric and script optimization:
+ * Use variables extensively to make designs adjustable.
+ * Use loops and conditional statements to automate repetitive features.
+ * Learn how to optimize code for clarity and maintainability.
+
+5. Exporting and printing considerations:
+ * Export STL files for models and test 3D printing them via Prusaslicer.
+ * Experiment with wall thickness, tolerances, and common 3D printing design rules.
+ * Iterate and refine designs based on print results.
+
+6. Resources:
+ * Official OpenSCAD documentation and user manual.
+ * Community forums and repositories of parametric projects for inspiration.
+ * YouTube channels with OpenSCAD project walkthroughs.
+ * GitHub repos for open-source parametric household objects or gadgets.
+
+-----------------------------------------------------------------------------------------
+
+Project: Parametric Phone Stand
+
+Why this project?
+ * It’s functional and household-related.
+ * It involves basic shapes and transformations.
+ * It has practical use of parameters for customization.
+ * It introduces modular design and boolean operations.
+
+Step-by-step outline:
+
+Step 1: Define parameters
+ * Phone width, height, and thickness (you can use average dimensions or measure your own device).
+ * Base dimensions (length, width, height).
+ * Viewing angle (tilt).
+ * Slot width and depth where the phone will rest.
+
+Step 2: Model the base
+ * Create a rectangular base (cube) using parameters.
+ * Round edges if you want to practice simple fillets (OpenSCAD fillets require more advanced techniques or using Minkowski sums).
+
+Step 3: Add the back support
+ * Create a tilted rectangular plate (using cube and rotate) that will support the phone's back.
+ * Position it on the base using translate.
+ * Use the viewing angle parameter to rotate the support.
+
+Step 4: Add the phone slot
+ * Create a small rectangular cutout (difference operation) on the base to hold the phone securely.
+ * Make sure slot dimensions are slightly larger than phone thickness.
+
+Step 5: Assemble and test
+ * Combine all parts with union.
+ * Use preview mode and render to check the model.
+ * Adjust parameters to see the phone stand adapt.
+
+Step 6: Export and 3D print
+ * Export your model as an STL file.
+ * Import in Prusaslicer and prepare for 3D printing.
+
+-----------------------------------------------------------------------------------------
+
+
